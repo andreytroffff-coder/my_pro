@@ -67,10 +67,11 @@ function = x**2 + 3*x + 5
 derivative = sp.diff(function, x)
 print(derivative) '''
 
-import time
-start_time = time.time()
-print(len(set(input().split()) & set(input().split())))
-print("--- %s seconds ---" % (time.time() - start_time))
+from pathlib import Path
+print("Это текущая директория:", Path().home())
+print("Это имя файла:", Path(r'C:\Users\Asus\Desktop\mypy\pytthon\решения'))
+new = Path("folder")
+new.mkdir()
 
 
 
