@@ -330,8 +330,8 @@ import time
 
 st1 = time.monotonic()
 import csv 
-with open('sales.csv', encoding='utf-8') as file:
-    data = csv.DictReader(file, delimiter=';' )
+#with open('sales.csv', encoding='utf-8') as file:
+    #data = csv.DictReader(file, delimiter=';' )
     #for r in data:
     #  if int(r['old_price']) > int(r['new_price']):
     #    print(r['name'])
@@ -487,4 +487,3 @@ with open('condensed.csv', encoding='utf-8') as file:
     print(file.read().strip())
 
 
-#update code
