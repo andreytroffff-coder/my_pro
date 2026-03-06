@@ -70,9 +70,9 @@ print(derivative) '''
 from pathlib import Path
 print("Это текущая директория:", Path().home())
 print("Это имя файла:", Path(r'C:\Users\Asus\Desktop\mypy\pytthon\решения'))
-new = Path("folder")
-new.mkdir()
-#this version is for main
+
+def func(n, m=0):
+    return n**2
 
 
 
