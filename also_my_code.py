@@ -71,8 +71,17 @@ from pathlib import Path
 print("Это текущая директория:", Path().home())
 print("Это имя файла:", Path(r'C:\Users\Asus\Desktop\mypy\pytthon\решения'))
 new = Path("folder")
-new.mkdir()
+if not new.exists:
+    new.mkdir()
 #this version is for new
 
+import itertools as it
+import time
+
+symbols = ['.', '-', "'", '"', "'", '-', '.', '_']
+
+for c in it.cycle(symbols):
+    print(c, end='')
+    time.sleep(0.05)
 
 
